@@ -418,7 +418,6 @@
     <button class="tab" onclick="show('features')">Features</button>
     <button class="tab" onclick="show('roles')">User Roles</button>
     <button class="tab" onclick="show('workflow')">Workflow</button>
-    <button class="tab" onclick="show('tech')">Technology</button>
     <button class="tab" onclick="show('roadmap')">Roadmap</button>
     <button class="tab" onclick="show('screenshots')">Screenshots</button>
   </div>
@@ -911,81 +910,6 @@
 <!-- ══════════════════════════════════════════
      SECTION 5: TECHNOLOGY
 ══════════════════════════════════════════ -->
-<div id="tech" class="section">
-  <div class="sec-header">
-    <h2>Technology Stack</h2>
-    <p>Built on proven, open-source, enterprise-grade technologies</p>
-  </div>
-
-  <div class="two-col" style="margin-bottom: 24px;">
-    <div class="panel">
-      <h3>⚙️ Backend</h3>
-      <div class="tech-grid" style="grid-template-columns: 1fr; gap: 8px; margin-bottom: 0;">
-        <div class="tech-pill"><span class="tech-icon">🔷</span><div class="tech-info"><div class="name">ASP.NET Core (C#)</div><div class="desc">REST Web API, CQRS pattern</div></div></div>
-        <div class="tech-pill"><span class="tech-icon">🐘</span><div class="tech-info"><div class="name">PostgreSQL</div><div class="desc">Primary database + JSONB fields</div></div></div>
-        <div class="tech-pill"><span class="tech-icon">🗂️</span><div class="tech-info"><div class="name">Entity Framework Core</div><div class="desc">ORM, snake_case naming convention</div></div></div>
-        <div class="tech-pill"><span class="tech-icon">🗄️</span><div class="tech-info"><div class="name">MinIO (S3-compatible)</div><div class="desc">File &amp; PDF document storage</div></div></div>
-        <div class="tech-pill"><span class="tech-icon">📄</span><div class="tech-info"><div class="name">OpenXML + LibreOffice</div><div class="desc">DOCX template rendering → PDF</div></div></div>
-        <div class="tech-pill"><span class="tech-icon">🔑</span><div class="tech-info"><div class="name">JWT Authentication</div><div class="desc">Secure, stateless auth with HMAC</div></div></div>
-      </div>
-    </div>
-    <div class="panel">
-      <h3>💻 Frontend</h3>
-      <div class="tech-grid" style="grid-template-columns: 1fr; gap: 8px; margin-bottom: 0;">
-        <div class="tech-pill"><span class="tech-icon">⚛️</span><div class="tech-info"><div class="name">React + TypeScript</div><div class="desc">Type-safe UI components</div></div></div>
-        <div class="tech-pill"><span class="tech-icon">⚡</span><div class="tech-info"><div class="name">Vite</div><div class="desc">Fast build tooling</div></div></div>
-        <div class="tech-pill"><span class="tech-icon">🔀</span><div class="tech-info"><div class="name">TanStack Router + Query</div><div class="desc">File-based routing, server state</div></div></div>
-        <div class="tech-pill"><span class="tech-icon">📊</span><div class="tech-info"><div class="name">AG Grid</div><div class="desc">High-performance data tables</div></div></div>
-        <div class="tech-pill"><span class="tech-icon">🎨</span><div class="tech-info"><div class="name">shadcn/ui + Tailwind</div><div class="desc">Accessible component library</div></div></div>
-        <div class="tech-pill"><span class="tech-icon">🌐</span><div class="tech-info"><div class="name">i18next (EN + नेपाली)</div><div class="desc">Full bilingual interface</div></div></div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Architecture highlights -->
-  <div class="sec-header">
-    <h2>Architecture Highlights</h2>
-  </div>
-  <div class="feature-grid">
-    <div class="feature-card">
-      <div class="icon">🏗️</div>
-      <h3>Clean Architecture</h3>
-      <p>Separate Domain, Application, Infrastructure, and API layers. Commands/Queries follow CQRS pattern. Business rules enforced in domain handlers.</p>
-      <div class="tags"><span class="tag tech">Maintainable</span></div>
-    </div>
-    <div class="feature-card">
-      <div class="icon">🗃️</div>
-      <h3>Schema Migration System</h3>
-      <p>DbUp versioned SQL migration scripts ensure the database schema is always up-to-date and reproducible across all deployments.</p>
-      <div class="tags"><span class="tag tech">DevOps</span></div>
-    </div>
-    <div class="feature-card">
-      <div class="icon">🔄</div>
-      <h3>Background Worker</h3>
-      <p>Async document generation worker processes PDF rendering jobs outside the request cycle — keeping the UI responsive during heavy operations.</p>
-      <div class="tags"><span class="tag tech">Performance</span></div>
-    </div>
-    <div class="feature-card">
-      <div class="icon">📐</div>
-      <h3>Nepal Business-Time SLA</h3>
-      <p>Custom <code>NepalBusinessTimeCalculator</code> computes SLA deadlines using Nepal's working hours and holidays — not just raw calendar time.</p>
-      <div class="tags"><span class="tag gov">Nepal</span><span class="tag tech">Domain Logic</span></div>
-    </div>
-    <div class="feature-card">
-      <div class="icon">🗄️</div>
-      <h3>Flexible JSON Storage</h3>
-      <p>PostgreSQL JSONB columns store template field schemas and generated document data — enabling dynamic forms without schema changes.</p>
-      <div class="tags"><span class="tag tech">Flexible</span></div>
-    </div>
-    <div class="feature-card">
-      <div class="icon">🔒</div>
-      <h3>Domain-Level Authorization</h3>
-      <p>Role-based access enforced both at API level and within command handlers. Workflow step role guards ensure only qualified officers can act.</p>
-      <div class="tags"><span class="tag tech">Security</span><span class="tag gov">Compliance</span></div>
-    </div>
-  </div>
-</div>
-
 <!-- ══════════════════════════════════════════
      SECTION 6: ROADMAP
 ══════════════════════════════════════════ -->
